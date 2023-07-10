@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Login">
+    <listeners>
+        <listener class-name="com.common.SuiteAlterer"/>
+    </listeners>
+    <test name="Login" parallel="classes">
+        <classes>
+            <class name="com.tests.login.TC_LOGIN_01_Check_UI_of_login_page"/>
+            <class name="com.tests.login.TC_LOGIN_03_Able_to_login_with_valid_info"/>
+            <class name="com.tests.login.TC_LOGIN_04_Unable_to_login_by_leaving_Email_filed_empty"/>
+            <class name="com.tests.login.TC_LOGIN_05_Unable_to_login_with_unregister_account"/>
+            <class name="com.tests.login.TC_LOGIN_06_Unable_to_login_by_leaving_Password_filed_empty"/>
+            <class name="com.tests.login.TC_LOGIN_07_unable_to_login_by_providing_wrong_password"/>
+            <class name="com.tests.login.TC_LOGIN_08_Verify_that_password_is_case_sensitive"/>
+        </classes>
+    </test>
+</suite>
+
+

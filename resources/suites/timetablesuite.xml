@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Timetable">
+    <listeners>
+        <listener class-name="com.common.SuiteAlterer"/>
+    </listeners>
+    <test name="Timetable" parallel="classes">
+        <classes>
+            <class name="com.tests.timetable.TC_TIME_01_Check_UI_of_Timetable_page"/>
+            <class name="com.tests.timetable.TC_TIME_03_Verify_Check_price_link_work_correctly"/>
+            <class name="com.tests.timetable.TC_TIME_04_Verify_that_book_ticket_link_work_correctly"/>
+        </classes>
+    </test>
+</suite>
+
+

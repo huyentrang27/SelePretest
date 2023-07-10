@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="TicketPrices">
+    <listeners>
+        <listener class-name="com.common.SuiteAlterer"/>
+    </listeners>
+    <test name="TicketPrices" parallel="classes">
+        <classes>
+            <class name="com.tests.ticketprices.TC_TP_01_Check_UI_of_Ticket_price_page"/>
+            <class name="com.tests.ticketprices.TC_TP_02_Verify_that_Check_price_link_works_correctly"/>
+            <class name="com.tests.ticketprices.TC_TP_04_Able_to_book_ticket_after_clicking_on_Book_ticker_button_at_Ticket_Price_page"/>
+        </classes>
+    </test>
+</suite>
+
+

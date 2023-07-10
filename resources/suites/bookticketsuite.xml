@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="BookTicket">
+    <listeners>
+        <listener class-name="com.common.SuiteAlterer"/>
+    </listeners>
+    <test name="BookTicket" parallel="classes">
+        <classes>
+            <class name="com.tests.bookTicket.TC_BK_01_Check_UI_of_Book_Ticket_page"/>
+            <class name="com.tests.bookTicket.TC_BK_05_User_is_able_to_book_ticket_by_selecting_valid_info"/>
+            <class name="com.tests.bookTicket.TC_BK_06_07_User_can_book_up_to_10_tickets"/>
+        </classes>
+    </test>
+</suite>
+
+

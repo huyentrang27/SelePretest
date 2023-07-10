@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Register">
+    <listeners>
+        <listener class-name="com.common.SuiteAlterer"/>
+    </listeners>
+    <test name="Register" parallel="classes">
+        <classes>
+            <class name="com.tests.register.TC_RES_01_Check_UI_of_Register_page"/>
+            <class name="com.tests.register.TC_RES_02_Able_to_register_an_account_with_valid_info"/>
+            <class name="com.tests.register.TC_RES_03_Unable_to_register_by_leaving_Email_filed_empty"/>
+            <class name="com.tests.register.TC_RES_06_Unable_to_register_new_account_by_using_a_registered_account_before"/>
+            <class name="com.tests.register.TC_RES_07_Unable_to_register_new_account_by_using_invalid_email_format"/>
+            <class name="com.tests.register.TC_RES_08_Unable_to_register_account_with_password_length_less_than_6_or_more_than_32"/>
+            <class name="com.tests.register.TC_RES_010_Unable_to_register_by_leaving_Password_filed_empty"/>
+            <class name="com.tests.register.TC_RES_011_Unable_to_register_account_with_password_length_less_than_8_or_more_than_64"/>
+            <class name="com.tests.register.TC_RES_013_Unable_to_register_new_account_when_password_and_confirm_password_field_are_not_match"/>
+            <class name="com.tests.register.TC_RES_015_Unable_to_register_by_leaving_PID_Passport_number_filed_empty"/>
+            <class name="com.tests.register.TC_RES_016_Unable_to_register_account_with_PID_length_less_than_8_or_more_than_20"/>
+            <class name="com.tests.register.TC_RES_018_Unable_to_register_new_account_by_using_PID_contain_special_character"/>
+        </classes>
+    </test>
+</suite>
+
+

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="MyTicket">
+    <listeners>
+        <listener class-name="com.common.SuiteAlterer"/>
+    </listeners>
+    <test name="MyTicket" parallel="classes">
+        <classes>
+            <class name="com.tests.myTickets.TC_MT_01_02_Check_UI_of_My_Ticket_page"/>
+            <class name="com.tests.myTickets.TC_MT_03_Filter_only_appears_when_ticket_table_has_more_than_6_rows"/>
+            <class name="com.tests.myTickets.TC_MT_04_Able_to_cancel_ticket"/>
+            <class name="com.tests.myTickets.TC_MT_05_to_010_User_can_filter_ticket"/>
+            <class name="com.tests.myTickets.TC_MT_011_Error_message_displays_when_filtering_with_criteria_not_match_with_any_information_of_ticket"/>
+            <class name="com.tests.myTickets.TC_MT_012_An_error_message_displayed_when_user_enter_wrong_format_date_in_Depart_date_field"/>
+        </classes>
+    </test>
+</suite>
+
+
