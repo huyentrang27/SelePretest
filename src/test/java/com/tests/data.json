@@ -1,17 +1,9 @@
 {
-  "TC01": [
+  "TC_01": [
     {
-      "LinkName": "Sortable Data Tables",
-      "ExpectedData": "Smith-John-jsmith@gmail.com-$50.00",
-      "Last Name": "Smith",
-      "First Name": "John",
-      "Email": "jsmith@gmail.com",
-      "Due": "$50.00"
-    }
-  ],
-  "TC02_Verify_that_the_data_in_the_columns_is_sorted_properly_after_clicking_on_the_header_of_each_column": [
-    {
-      "HeaderName": "Last Name-First Name-Email-Web Site-Action"
+      "LinkName": "File Download",
+      "FileName": "sample_media_file.png",
+      "DownloadAbleFileCount": "25"
     }
   ]
 }
